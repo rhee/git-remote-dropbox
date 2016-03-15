@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ~/.pyenv/bin/activate
+
+PYTHONWARNINGS="ignore:Unverified HTTPS request"
+export PYTHONWARNINGS
+
+exec ~/bin/git-remote-dropbox.files/git-remote-dropbox "$@"
